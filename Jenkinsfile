@@ -1,5 +1,7 @@
 pipeline {
-    agent { docker 'randomknowledge/docker-pyenv-tox' }
+ agent {
+        docker { image 'randomknowledge/docker-pyenv-tox'}
+    }
     environment {
         HOME = pwd()
     }
